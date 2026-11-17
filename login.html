@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KAU Student Guide - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KAU Student Guide</h1>
+        <p>Student Account Login</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-box" style="width: 420px;">
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="campus1.png" alt="Logo" usemap="#loginmap" style="width: 100%; height: auto; border: 1px solid #ccc;">
+            <map name="loginmap">
+                <area shape="rect" coords="0,0,600,220" href="about.html" alt="About Us">
+            </map>
+        </div>
+
+        <h2>Login</h2>
+        <form onsubmit="return checkLogin()">
+            <p>
+                <label>University Email:</label><br>
+                <input type="text" id="email" style="width: 95%; padding: 8px; margin-top: 5px;">
+            </p>
+            <p>
+                <label>Password:</label><br>
+                <input type="password" id="pass" style="width: 95%; padding: 8px; margin-top: 5px;">
+            </p>
+            <p>
+                <input type="submit" value="Login" class="my-btn">
+            </p>
+            <p id="login-msg" style="font-weight: bold;"></p>
+        </form>
+        <p>New student? <a href="signup.html">Create an account</a></p>
+    </div>
+
+    <footer>
+        <p>CPIS-358 Web Programming Project - KAU</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KAU Student Guide - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-links {
+            background-color: #e9eef3;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .banner-area {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KAU Student Guide</h1>
+        <p>Quick Information & Services for FCIT Students</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-box">
+        <div class="top-links">
+            <b>Page Sections:</b> 
+            <a href="#about-idea">Project Idea</a> | 
+            <a href="#notices">Student Notices</a> | 
+            <a href="#schedule-table">Office Hours</a>
+        </div>
+
+        <div class="banner-area">
+            <img src="campus1.png" id="banner-pic" alt="Campus Banner" usemap="#campusmap" style="border: 2px solid #1c4e80;">
+            <map name="campusmap">
+                <area shape="rect" coords="0,0,600,220" href="about.html" alt="About Us">
+            </map>
+            <p style="font-size: 13px; color: #555;">(Click on the image above to go to the About Us page)</p>
+        </div>
+
+        <article>
+            <section id="about-idea">
+                <h2>About Our Project</h2>
+                <p>Many new students at King Abdulaziz University struggle to find department office hours, lab locations, and registration announcements in one place. Our website solves this problem by collecting basic student links and department schedules on a simple portal.</p>
+                
+                <div class="info-card">
+                    <h3>Main Features:</h3>
+                    <ul>
+                        <li>Easy access to FCIT department office hours.</li>
+                        <li>Quick announcement board for students.</li>
+                        <li>Student login and registration pages.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Campus View Switcher</h2>
+                <p>Click a button below to change the picture and building info:</p>
+                <button class="my-btn" onclick="switchCampus('main')">Main Portal</button>
+                <button class="my-btn" onclick="switchCampus('fcit')">FCIT Building</button>
+                <div id="campus-desc" class="info-card">
+                    <b>Main Portal:</b> General student services, advising schedules, and registration info.
+                </div>
+            </section>
+
+            <section id="notices">
+                <h2>Important Notices</h2>
+                <button class="my-btn" onclick="showNotices()">Show Latest Notices</button>
+                <ul id="notice-ul" style="margin-top: 10px;">
+                    <li>Press the button to view current notices.</li>
+                </ul>
+            </section>
+
+            <section id="schedule-table">
+                <h2>Department Office Hours</h2>
+                <table>
+                    <tr>
+                        <th>Department</th>
+                        <th>Building</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Information Systems (IS)</td>
+                        <td>Building 31</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Science (CS)</td>
+                        <td>Building 33</td>
+                        <td>11:00 AM - 01:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Information Technology (IT)</td>
+                        <td>Building 31</td>
+                        <td>09:00 AM - 11:00 AM</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Campus Alert Note</h2>
+                <div class="z-wrapper">
+                    <div class="box-back">General University Schedule - First Semester 2026/27</div>
+                    <div class="box-front"><b>Reminder:</b> Check Blackboard regularly for assignment deadlines.</div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <p>CPIS-358 Web Programming Project - KAU</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        console.log("Home page loaded.");
+    </script>
+</body>
+</html>
